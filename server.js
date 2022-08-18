@@ -27,9 +27,9 @@ app.listen(process.env.PORT || 8080, function(){
   const pool = mysql.createPool({
     host: "remotemysql.com",
     port: "3306",
-    user: "X70OTbG0CT",
-    password: "1kLWlm1vI3",
-    database: "X70OTbG0CT"
+    user: "uRGRBvNc1V",
+    password: "RMmcTkSnkm",
+    database: "uRGRBvNc1V"
   }); 
 
   

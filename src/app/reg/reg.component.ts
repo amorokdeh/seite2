@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 import sha256 from 'crypto-js/sha256';
 import { Router} from '@angular/router';
 import { ExchangeService } from '../services/exchange.service';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -29,7 +30,8 @@ export class RegComponent implements OnInit {
   constructor(private authService: AuthService,
               private formBuilder: FormBuilder,
               private router: Router,
-              private data: ExchangeService) {
+              private data: ExchangeService,
+              private translate: TranslateService) {
 
       this.registrationForm = this.formBuilder.group({
         
@@ -64,8 +66,8 @@ export class RegComponent implements OnInit {
   //Methode zum Reg einer Mitarbeiter
   register(registerDaten) {
     //überprüfen ob ein Feld leer ist
-    if(this.isEmpty(registerDaten.username[0], "Benutzername") || 
-       this.isEmpty(registerDaten.passwort[0], "Passwort")) {
+    if(this.isEmpty(registerDaten.username[0], this.translate.instant('login.username')) || 
+       this.isEmpty(registerDaten.passwort[0], this.translate.instant('login.password'))) {
       return;
     }
     this.encryptPassword(registerDaten.passwort);
@@ -75,19 +77,19 @@ export class RegComponent implements OnInit {
         this.newUser = this.authService.register(registerDaten.username, this.encPassword);
         this.newUser.subscribe(data => {
           this.authService.registerInVerwaltung(registerDaten.username).subscribe(data => {
-            alert('Erfolgreich registriert!')
+            alert(this.translate.instant('error.successful_reg'))
             this.router.navigate(['/']);
           })
     })
       } else {
-        this.errorMes = "Benutzername existiert bereits";
+        this.errorMes = this.translate.instant('error.duplicate_user');
       }
     })
   }
 
   isEmpty(str, Message) : boolean{
     if(!str || str.length === 0){
-      this.errorMes = Message + ' Darf nicht leer sein';
+      this.errorMes = Message + this.translate.instant('error.field_empty');
       return true;
     } else {
       return false;

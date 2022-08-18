@@ -59,14 +59,15 @@
         "sign_in": "Zaloguj się",
         "username": "Nazwa użytkownika",
         "password": "Hasło",
-        "permissions": "uprawnienia",
+        "permissions": "Uprawnienia",
         "register_user": "Zarejestruj Użytkownika",
         "no_permission": "Brak pozwolenia",
         "register": "Zarejestruj się",
         "delete_user": "Usuń użytkownika",
         "delete": "Usuń",
         "user_deleted": "Konto pracownika zostało pomyślnie usunięte",
-        "employee_list": "Lista zatrudnionych"
+        "employee_list": "Lista zatrudnionych",
+        "successful_reg": "Zarejestrowano pomyślnie!"
         },
 
     "profile": {
@@ -79,7 +80,8 @@
 
     "error": {
         "login_failed": "Logowanie nie powiodło się",
-        "field_empty": "nie może być puste",
+        "duplicate_user": "Nazwa użytkownika już istnieje",
+        "field_empty": " nie może być puste",
         "unknown_user": "Nie znaleziono użytkownika",
         "admin_delete": "Konto administratora nie może zostać usunięte!"
     }

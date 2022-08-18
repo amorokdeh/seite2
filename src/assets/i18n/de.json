@@ -66,7 +66,8 @@
         "delete_user": "Nutzer löschen",
         "delete": "Löschen",
         "user_deleted": "Mitarbeiter-Konto wurde erfolgreich gelöscht",
-        "employee_list": "Liste der Mitarbeiter"
+        "employee_list": "Liste der Mitarbeiter",
+        "successful_reg": "Erfolgreich registriert!"
     },
 
     "profile": {
@@ -79,8 +80,9 @@
 
     "error": {
         "login_failed": "Login fehlgeschlagen",
-        "field_empty": "darf nicht leer sein",
+        "field_empty": " darf nicht leer sein",
         "unknown_user": "Benutzer nicht gefunden",
+        "duplicate_user": "Benutzername existiert bereits",
         "admin_delete": "Admin-Konto darf nicht gelöscht werden!"
     }
 }

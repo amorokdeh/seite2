@@ -66,10 +66,11 @@
         "delete_user": "Supprimer l'utilisateur",
         "delete": "Supprimer",
         "user_deleted": "Compte employé supprimé avec succès",
-        "employee_list": "Liste des employés"
+        "employee_list": "Liste des employés",
+        "successful_reg": "Enregistrement réussi!"
     },
 
-    "profils": {
+    "profile": {
         "change_profile": "Changer de profil",
         "new_username": "Nouveau nom d'utilisateur",
         "new_password": "Nouveau mot de passe",
@@ -79,7 +80,8 @@
 
     "error": {
         "login_failed": "La connexion a échoué",
-        "field_empty": "ne doit pas être vide",
+        "duplicate_user": "Le nom d'utilisateur existe déjà",
+        "field_empty": " ne doit pas être vide",
         "unknown_user": "Utilisateur introuvable",
         "admin_delete": "Le compte administrateur ne doit pas être supprimé!"
     }

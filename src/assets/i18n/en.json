@@ -65,7 +65,8 @@
          "delete_user": "Delete User",
          "delete": "Delete",
          "user_deleted": "Employee account deleted successfully",
-         "employee_list": "List of employees"
+         "employee_list": "List of employees",
+         "successful_reg": "Successfully registered!"
      },
 
      "profile": {
@@ -78,7 +79,8 @@
 
      "error": {
          "login_failed": "Login failed",
-         "field_empty": "must not be empty",
+         "duplicate_user": "Username already exists",
+         "field_empty": " must not be empty",
          "unknown_user": "User not found",
          "admin_delete": "Admin account must not be deleted!"
      }
